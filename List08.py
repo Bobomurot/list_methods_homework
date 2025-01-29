@@ -6,4 +6,6 @@ def main(fruits):
     Returns:
         list: return answer
     """
-    return
+    while "apple" in fruits:
+        fruits.remove("apple")
+    return fruits

@@ -6,4 +6,9 @@ def main(list1):
     Returns:
         list: return answer
     """
-    return
+    a = list1.count(0)
+    b = list1.count(1)
+    if a > b:
+        return [a, b]
+    else:        
+        return [b, a]

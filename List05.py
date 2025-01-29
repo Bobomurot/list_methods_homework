@@ -1,7 +1,8 @@
-def main(numbers1, numbers2):
+def main(n1, n2):
     """
     You are given a list called numbers1 and numbers2.
-    Delete the last item in the first list and add that deleted item to the beginning of the second list.
+    Delete the last item in the first list and add that deleted item to the beginning of the 
+    second list.
     Merge the first list into the second and return.
     Args:
         numbers1(list): parameter
@@ -9,4 +10,7 @@ def main(numbers1, numbers2):
     Returns:
         list: return answer
     """
-    return
+    x = n1.pop()
+    n2.insert(0, x)
+    n1.extend(n2)   
+    return n1

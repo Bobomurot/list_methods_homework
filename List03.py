@@ -7,4 +7,5 @@ def main(fruits1, fruits2):
     Returns:
         list: return answer
     """
-    return
+    a = fruits1 + fruits2 # or fruits1.extend(fruits2) return fruit1
+    return a
